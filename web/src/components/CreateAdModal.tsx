@@ -44,7 +44,9 @@ export function CreateAdModal() {
             })
         } catch (err) {
             console.log(err)
+            alert('Ocorreu um erro, tente novamente mais tarde!')
         }
+        alert('Anúncio criado com sucesso!')
     }
     return (
         <Dialog.Portal>
