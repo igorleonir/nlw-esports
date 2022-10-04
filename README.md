@@ -1,11 +1,73 @@
-# nlw-esports
+<p align="center">
+<img src="./assets/img/nlw-esports-logo.svg" alt="Next Level Week Esports Logo"/></p>
 
-.env example
+<br>
 
-# Environment variables declared in this file are automatically made available to Prisma.
-# See the documentation for more detail: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema
+The evolved version of the **Esports** project on the [Next Level Week](https://lp.rocketseat.com.br/nlw) by Rocketseat.
 
-# Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
-# See the documentation for all the connection string options: https://pris.ly/d/connection-strings
+The web client is deployed on Vercel here:
 
-DATABASE_URL="postgresql://root:randompassword@localhost:5432/mydb?schema=public"
+ https://nlw-esports-ignite.vercel.app/
+
+The server is deployed on Fly here: 
+
+https://nlw-esports.fly.dev/games
+
+<hr>
+
+**WORK IN PROGRESS:** Internationalization (i18n), new screens, form validations, unit tests w/ Jest, e2e tests w/ Cypress, pipeline deploy w/ Github Actions.
+
+<hr>
+<br>
+
+  - [Description](#description)
+  - [Stack and tools](#stack-and-tools)
+  - [Quickstart](#quickstart)
+
+<br>
+
+## Description
+
+The project is called *Find your Duo*.
+It is a platform to find the perfect partner to play your favorite game together, by connecting your Twitch.tv account.
+
+<p align="center">
+<img src="./assets/img/app-preview.jpeg" alt="Next Level Week Esports Logo"/></p>
+
+## Stack and tools
+* [Node.js](https://nodejs.org/en/)
+* [Prisma](https://www.prisma.io/)
+* [React](https://reactjs.org/)
+* [React Native](https://reactnative.dev/)
+* [Expo](https://expo.dev/)
+* [Figma](https://www.figma.com/)
+* [Radix UI](https://www.radix-ui.com/)
+
+
+## Quickstart
+
+### Server
+
+First, create a new ``.env`` file on the root directory, using the `.env-example` template as base.
+*this db has built in PostgresSQL
+
+Then, to create the local db run:
+```sh
+$ npm install
+$ npm prisma migrate dev
+$ npm prisma db seed
+```
+
+After that, to start the server, run:
+```sh
+$ npm run dev
+```
+
+### Web
+
+To run the local Vite web client:
+```sh
+$ npm install
+$ npm run dev
+```
+
