@@ -27,8 +27,8 @@ export function Game() {
         navigation.goBack();
     }
 
-    async function getDiscordUser(adsId: string) {
-        fetch(`http://192.168.2.69:3333/ads/${game.id}/discord `)
+    async function getDiscordUser(id: string) {
+        fetch(`http://192.168.2.69:3333/ads/${id}/discord `)
             .then(response => response.json())
             .then(data => setDiscordDuoSelected(data.discord))
     }
